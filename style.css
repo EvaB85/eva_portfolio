@@ -50,4 +50,15 @@ section {
 .skills__skill-box {
   width: 20%;
   text-align: center;
+  margin-top: 2em;
+}
+
+.skills__img {
+  width: 60px;
+  height: 60px;
+  filter: grayscale(100%);
+}
+
+.skills__img:hover {
+  filter: none;
 }
