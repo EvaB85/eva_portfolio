@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+}
+
+header h1 {
+  font-size: 65px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  margin: 0;
+  padding: .5em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
