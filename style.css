@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #ddd;
+  background: none;
 }
 
 header h1 {
@@ -27,7 +27,7 @@ nav {
 }
 
 a {
-  color: white;
+  color: black;
   font-size: 2em;
   text-decoration: none;
 }
@@ -41,6 +41,10 @@ section {
   margin: 0 auto;
 }
 
+p {
+  font-size: 25px;
+}
+
 .skills {
   display: flex;
   justify-content: space-around;
@@ -50,15 +54,56 @@ section {
 .skills__skill-box {
   width: 20%;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 8em;
 }
 
 .skills__img {
   width: 60px;
   height: 60px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .skills__img:hover {
+  filter: none;
+}
+
+.about-section {
+  border: 1em solid black;
+  margin-top: 4em;
+  padding: 2em;
+  background-image: url("https://images.unsplash.com/photo-1481583539511-cd5e9ff6820a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebd317979c0a333dded157ac7a7497a0&auto=format&fit=crop&w=800&q=60");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about img {
+    flex: 1 1 20%;
+    display: inline-block;
+    margin-right: 2em;
+    max-width: 25%;
+    /* max-width: 300px; */
+  }
+
+.about__text-wrapper__text {
+  max-width: 600px;
+}
+
+
+.projects img {
+  width: 160px;
+  height: 160px;
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.projects img:hover {
   filter: none;
 }
