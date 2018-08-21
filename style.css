@@ -2,10 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eee;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  background: none;
 }
 
 header h1 {
@@ -43,6 +46,12 @@ section {
 
 p {
   font-size: 25px;
+}
+
+footer {
+  background: black;
+  margin-bottom: 0;
+  color: white;
 }
 
 .skills {
@@ -96,14 +105,32 @@ p {
 
 
 .projects img {
-  width: 160px;
-  height: 160px;
-  filter: grayscale(100%);
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
+  width: 400px;
+  /* height: 160px; */
+  /* filter: grayscale(100%); */
+  display: inline-flex;
+  border: .3em solid black;
 }
 
-.projects img:hover {
-  filter: none;
+/* .projects img:hover {
+  filter: grayscale(0%);
+} */
+
+.projects {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  max-width: 90%;
+  justify-content: space-around;
+}
+
+.more {
+  border: 1em solid black;
+  margin-top: 4em;
+  padding: 2em;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* TESTING ALL THIS OUT */
+  background-image: url("https://images.unsplash.com/photo-1517648892718-0d63c8853807?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=48ff0c71e4255e55397b0524a210f7eb&auto=format&fit=crop&w=800&q=60");
 }
