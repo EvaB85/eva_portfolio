@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-color: white;
 }
 
 html, body {
@@ -19,7 +20,7 @@ header h1 {
   padding: .5em;
 }
 
-nav {
+nav, footer {
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -27,6 +28,11 @@ nav {
   padding: 2em 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+footer {
+  padding: 1em 0;
+  margin-top: 2em;
 }
 
 a {
@@ -46,12 +52,6 @@ section {
 
 p {
   font-size: 25px;
-}
-
-footer {
-  background: black;
-  margin-bottom: 0;
-  color: white;
 }
 
 .skills {
@@ -103,18 +103,27 @@ footer {
   max-width: 600px;
 }
 
+.projects-section {
+  display: flex;
+  justify-content: center;
+  border: 0.5em solid black;
+  padding: 2em;
+}
+
+.projects-title {
+  align-content: center;
+}
 
 .projects img {
   width: 400px;
-  /* height: 160px; */
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
   display: inline-flex;
   border: .3em solid black;
 }
 
-/* .projects img:hover {
+.projects img:hover {
   filter: grayscale(0%);
-} */
+}
 
 .projects {
   display: flex;
