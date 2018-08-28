@@ -4,7 +4,7 @@
 
 body {
   /* background-color: #eee; */
-  background-color: white;
+  background-color: rgba(#77f7c5, 0.7);
 }
 
 html, body {
@@ -58,6 +58,7 @@ p {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  margin-bottom: 3em;
 }
 
 .skills__skill-box {
@@ -91,22 +92,29 @@ p {
     justify-content: space-around;
   }
 
-  .about img {
-    flex: 1 1 20%;
-    display: inline-block;
-    margin-right: 2em;
-    max-width: 25%;
-    /* max-width: 300px; */
-  }
+.about img {
+  flex: 1 1 20%;
+  display: inline-block;
+  margin-right: 2em;
+  max-width: 25%;
+  /* max-width: 300px; */
+}
 
 .about__text-wrapper__text {
   max-width: 600px;
 }
 
 .projects-section {
+  border: 0.5em solid black;
+}
+
+.projects-section h1 {
+  text-align: center;
+}
+
+.projects-sub-section {
   display: flex;
   justify-content: center;
-  border: 0.5em solid black;
   padding: 2em;
 }
 
